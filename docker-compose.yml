@@ -1,5 +1,5 @@
 services:
-  web:
+  city-pdf-splitter:
     build: .
     ports:
       - "80:80"
