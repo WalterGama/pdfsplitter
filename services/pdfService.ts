@@ -1,4 +1,3 @@
-
 import { SplitResult, ProcessingStatus } from '../types';
 
 // Declare globals for the external libraries loaded in index.html
@@ -58,7 +57,8 @@ async function extractCityFromPage(pdfPage: any): Promise<string> {
   }
 
   // Strategy 3: Search the whole page if not found in header (fallback)
-  const fullText = items.map(i => i.text).join(" ");
+  // Fix: Explicitly type 'i' as any to avoid TS7006 error
+  const fullText = items.map((i: any) => i.text).join(" ");
   const fallbackMatch = fullText.match(cityStateRegex);
   if (fallbackMatch) {
     return fallbackMatch[0].toUpperCase();

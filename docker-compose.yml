@@ -1,6 +1,8 @@
 services:
-  city-pdf-splitter:
-    build: .
+  pdf-splitter:
+    build:
+      context: .
+      dockerfile: Dockerfile.tsx
     ports:
       - "80:80"
     restart: always
