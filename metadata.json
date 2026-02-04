@@ -1,0 +1,5 @@
+{
+  "name": "CityPDF Splitter Local",
+  "description": "Ferramenta de processamento 100% client-side que identifica cabeçalhos de cidades em PDFs e separa os documentos localmente, sem envio de dados para servidores.",
+  "requestFramePermissions": []
+}

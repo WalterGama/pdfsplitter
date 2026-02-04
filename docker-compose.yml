@@ -1,0 +1,10 @@
+
+version: '3.8'
+
+services:
+  pdf-splitter:
+    build: .
+    container_name: pdf-splitter-app
+    ports:
+      - "80:80"
+    restart: always
